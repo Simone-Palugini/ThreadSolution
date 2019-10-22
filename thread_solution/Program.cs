@@ -10,7 +10,6 @@ namespace thread_solution
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
