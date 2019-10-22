@@ -13,14 +13,14 @@ namespace thread_solution_2
         {
             string someVariable = "Matteo Tumiati";
 
-            var workerThread = new Thread((o) =>
+            var workerThread = new Thread(() =>
             {
-                Console.WriteLine("Saluti da: {0}", o);
+                Thread.Sleep(500);
+                Console.WriteLine("Saluti da: {0}", someVariable);
             });
 
-            workerThread.Start(someVariable);
-
-            
+            workerThread.Start();
+            someVariable = "Daniele Bochicchio";
 
             Console.ReadLine();
         }
