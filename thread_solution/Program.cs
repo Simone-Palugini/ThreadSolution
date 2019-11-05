@@ -18,7 +18,7 @@ namespace thread_solution
                 Console.WriteLine("myThread è terminato");
             });
 
-            //Esexuzione myThread
+            //Esecuzione myThread
             myThread.Start();
 
             Thread.Sleep(500);
